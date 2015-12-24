@@ -1,0 +1,16 @@
+---
+layout: article
+---
+
+<div class="row">
+	<div class="col-xs-2 col-sm-3 col-md-4 col-lg-4">
+	</div>
+	<div class="col-xs-20 col-sm-18 col-md-16 col-lg-16">
+		<article>
+			<p class="post-date page-date text-center">{{ page.date | date: "%b %-d, %Y" }}</p>
+			<h2 class="article-post text-center">{{ page.title }}</h2>
+			<div class="header-separator"></div>
+			{{ content }}
+		</article>
+	</div>
+</div>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/custom.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css">
+
+  </head>
+
+
+  <body>
+
+    <div class="container">
+
+      <header class="row">
+        <div class="col-xs-1 col-md-2">
+        </div>
+        <div class="col-xs-22 col-md-20 text-center">
+          <h1><a href="http://localhost:4000">{{ site.title }}</a></h1>
+          <p>{{ site.description }}</p>
+          <hr class="header-hr"/>
+          <div class="info-box text-left">
+            <a href="#" class="mobile-btn"><span class="info-text">info </span><span class="more-icon fa fa-angle-down"></span></a>
+          </div>
+
+        </div>
+      </header>
+
+      {{content}}
+
+      <footer class="row">
+        <div class="col-xs-1 col-md-2">
+        </div>
+        <div class="col-xs-22 col-md-20 text-center footer-box">
+          <hr />
+          <p class="footer-text">Copyright &copy; 2015 mike-studio.com &nbsp;/ &nbsp;<a href="/feed.xml">RSS&nbsp;Feed</a></p>
+        </div>
+      </footer>
+  
+    </div>
+
+    <script src="{{ site.baseurl }}/js/bootstrap.js"></script>
+  
+  </body>
+</html>

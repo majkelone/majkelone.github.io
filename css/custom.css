@@ -1,0 +1,163 @@
+body {
+		font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 26px;
+		font-style: normal;
+		color: #2e2e2e;
+	}
+
+.aside-posts {
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.github-icon {
+	display: inline-block;
+	width: 20px;
+	margin-right: 5px;
+}
+
+.icon-text {
+	line-height: 35px;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 23px;
+}
+
+h2.article-post {
+	font-weight: 600;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	color: #454545;
+	font-size: 24px;
+}
+
+.header-separator {
+	width: 5%;
+	height: 1px;
+	content: "";
+    background: #adadad;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.post-date {
+	font-size: 14px;
+	text-transform: uppercase
+}
+
+.page-date {
+	margin-bottom: 2px
+}
+
+.footer-box hr {
+	margin-top: 30px;
+	margin-bottom: 10px
+}
+
+.footer-text {
+	font-size: 14px;
+	margin-bottom: 15px
+}
+
+.paginate {
+	margin-top:10px;
+	font-size: 15px;
+}
+
+.last-page {
+	color: #dedede;
+}
+
+.article-content:before,
+.article-content:after {
+	content: " ";
+	display: table;
+}
+
+.article-content:after {
+	clear: both;
+}
+
+.header-hr {
+	margin-bottom: 0px;
+}
+/*
+.arrow-down {
+	padding-top: 8px;
+}
+
+.arrow-down:focus {
+	fill: #ed6440;
+}
+*/
+
+.info-text {
+	font-size: 14px;
+}
+
+.more-icon:before {
+	font-size: 16px;
+}
+
+.mobile-btn {
+	color: #bbbbbb;
+/*	fill: #bbbbbb; */
+}
+
+.mobile-btn:hover {
+	color: #ed6440;
+/*	fill: #ed6440; */
+}
+
+.info-box {
+	margin-top: 0px;
+	border: 1px solid #eeeeee;
+	border-top: none;
+	width: 50px;
+	float: right;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding-left: 6px;
+	/*margin-bottom: -5px;*/
+}
+
+.article-margin {
+	height: 31px;
+	display: table;
+	content: ""
+}
+
+@media (max-width: 465px) {
+	.paginate-no {
+		width:100%;
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 19px;
+		line-height: 29px;
+	}
+
+	h2.article-post {
+	font-size: 30px;
+	}
+
+	.footer-text {
+	font-size: 16px;
+	margin-bottom: 20px
+	}
+
+	.paginate {
+		font-size: 19px;
+	}
+	.info-box {
+		visibility: hidden;
+	}
+}
+
+
