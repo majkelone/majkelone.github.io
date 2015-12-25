@@ -7,10 +7,10 @@
 
     <title>{{ site.title }}</title>
 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/custom.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css">
 
   </head>
 
@@ -23,7 +23,7 @@
         <div class="col-xs-1 col-md-2">
         </div>
         <div class="col-xs-22 col-md-20 text-center">
-          <h1><a href="http://localhost:4000">{{ site.title }}</a></h1>
+          <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
           <p>{{ site.description }}</p>
           <hr class="hr-header"/>
           <div class="article-margin">
@@ -44,8 +44,6 @@
       </footer>
   
     </div>
-
-    <script src="{{ site.baseurl }}/js/bootstrap.js"></script>
   
   </body>
 </html>

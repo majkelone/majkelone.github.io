@@ -61,7 +61,7 @@ layout: default
   <div class="col-xs-6 col-sm-5 col-md-7 col-lg-8">
   </div>
 
-  <div class="col-xs-3 col-sm-4 col-md-3 col-lg-2 text-center paginate-no">
+  <div class="col-xs-3 col-sm-4 col-md-3 col-lg-2 text-center paginate-nr">
 
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path }}">« Prev</a>
@@ -71,11 +71,11 @@ layout: default
 
   </div>
 
-  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 text-center paginate-no">
+  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 text-center paginate-nr">
     <span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   </div>
 
-  <div class="col-xs-3 col-sm-4 col-md-3 col-lg-2 text-center paginate-no">
+  <div class="col-xs-3 col-sm-4 col-md-3 col-lg-2 text-center paginate-nr">
 
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path }}">Next »</a>

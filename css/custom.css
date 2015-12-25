@@ -79,15 +79,6 @@ h2.article-post {
 .hr-info {
 	margin-bottom: 5px;
 }
-/*
-.arrow-down {
-	padding-top: 8px;
-}
-
-.arrow-down:focus {
-	fill: #ed6440;
-}
-*/
 
 .info-text {
 	font-size: 14px;
@@ -118,7 +109,6 @@ a.mobile-btn:hover {
 	padding-left: 6px;
 	margin-bottom: -5px;
 	text-align: left;
-
 }
 
 .mobile-info {
@@ -144,10 +134,14 @@ a.mobile-btn:hover {
 	color: #c73d02;
 }
 
-.info-contact {
+p.info-contact {
 	font-size: 17px;
-	font-weight: 500;
+	font-weight: 400;
 	margin-bottom: 4px;
+}
+
+.mobile-info .aside-text.about-mobile {
+	line-height: 23px;
 }
 
 div.aside-text.contact-mobile p {
@@ -168,9 +162,8 @@ div.aside-text.contact-mobile p {
 	display: none;
 }
 
-
 @media (max-width: 465px) {
-	.paginate-no {
+	.paginate-nr {
 		width:100%;
 	}
 }
@@ -202,7 +195,7 @@ div.aside-text.contact-mobile p {
 	display: block;
 	}
 
-	.mobile-info {
+	.mobile-nav.info-collapsed .mobile-info {
 		display: none;
 	}
 }
