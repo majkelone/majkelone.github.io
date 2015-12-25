@@ -7,19 +7,9 @@ body {
 		color: #2e2e2e;
 	}
 
-.aside-posts {
+.aside-text {
 	font-size: 15px;
 	line-height: 22px;
-}
-
-.github-icon {
-	display: inline-block;
-	width: 20px;
-	margin-right: 5px;
-}
-
-.icon-text {
-	line-height: 35px;
 }
 
 h3 {
@@ -82,8 +72,12 @@ h2.article-post {
 	clear: both;
 }
 
-.header-hr {
+.hr-header {
 	margin-bottom: 0px;
+}
+
+.hr-info {
+	margin-bottom: 5px;
 }
 /*
 .arrow-down {
@@ -99,37 +93,81 @@ h2.article-post {
 	font-size: 14px;
 }
 
-.more-icon:before {
-	font-size: 16px;
+a.mobile-btn {
+	color: #303030;
 }
 
-.mobile-btn {
-	color: #bbbbbb;
-/*	fill: #bbbbbb; */
+a.mobile-btn:hover {
+	color: #c73d02;
 }
 
-.mobile-btn:hover {
-	color: #ed6440;
-/*	fill: #ed6440; */
+.close-icon {
+	font-size: 14px;
+	display: none;
+	color: #c73d02;
 }
 
-.info-box {
+.mobile-toggle {
 	margin-top: 0px;
 	border: 1px solid #eeeeee;
 	border-top: none;
 	width: 50px;
 	float: right;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
 	padding-left: 6px;
-	/*margin-bottom: -5px;*/
+	margin-bottom: -5px;
+	text-align: left;
+
+}
+
+.mobile-info {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 35px;
+	display: none;
+}
+
+.mobile-nav.info-collapsed .open-icon {
+	display: none;
+}
+
+.mobile-nav.info-collapsed .close-icon {
+	display: inline-block;
+}
+
+.mobile-nav.info-collapsed .mobile-info {
+	display: block;
+}
+
+.mobile-nav.info-collapsed .info-text {
+	color: #c73d02;
+}
+
+.info-contact {
+	font-size: 17px;
+	font-weight: 500;
+	margin-bottom: 4px;
+}
+
+div.aside-text.contact-mobile p {
+	margin-bottom: 5px;
 }
 
 .article-margin {
-	height: 31px;
+	height: 24px;
 	display: table;
 	content: ""
 }
+
+.fa.fa-github {
+	font-size: 20px;
+}
+
+.aside-info {
+	display: none;
+}
+
 
 @media (max-width: 465px) {
 	.paginate-no {
@@ -155,8 +193,17 @@ h2.article-post {
 	.paginate {
 		font-size: 19px;
 	}
-	.info-box {
+
+	.mobile-toggle {
 		visibility: hidden;
+	}
+
+	.aside-info {
+	display: block;
+	}
+
+	.mobile-info {
+		display: none;
 	}
 }
 

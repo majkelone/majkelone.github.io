@@ -28,27 +28,29 @@ layout: default
   <div class="hidden-xs col-sm-1 col-md-1 col-lg-1">
   </div>
 
-  <aside class="hidden-xs col-sm-5 col-md-5 col-lg-4">
-    <h4>Other posts:</h4>
-    <ul class="aside-posts">
-      {% for post in site.posts offset: 5 limit: 5 %}
+  <aside class="col-sm-5 col-md-5 col-lg-4">
 
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-
-      {% endfor %}
-    </ul>
-    <hr />
-
-    <h4>About:</h4>
-    <p class="aside-posts">Hi, my name is Mike. I'm a&nbsp;web developer based in Poland. This site is going to be my blog and the playground. I hope you'll find some interesting articles here. Enjoy!</p>
-    <h4>Contact:</h4>
-    <div class="aside-posts">
-      <p>hello@mike-studio.com</p>
-      <p>
-        <a href="https://github.com/mike-majkel"><span class="github-icon">{% include icon-github.svg %}</span><span class="icon-text">mike-majkel</span></a>
-      </p>
+    <div class="other-posts hidden-xs">
+      <h4>Other posts:</h4>
+      <ul class="aside-text">
+        {% for post in site.posts offset: 5 limit: 5 %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+      <hr />
     </div>
-    <h4>Portfolio:</h4>
+
+    <div class="aside-info">
+      <h4>About:</h4>
+      <p class="aside-text about">Hi, my name is Mike. I'm a&nbsp;web developer based in Poland. This site is going to be my blog and the playground. I hope you'll find some interesting articles here. Enjoy!</p>
+
+      <h4>Contact:</h4>
+      <div class="aside-text contact">
+        <p><a href="mailto:hello@mike-studio.com"><span class="fa fa-envelope"></span> hello@mike-studio.com</a></p>
+        <p><a href="https://github.com/mike-js"><span class="fa fa-github"></span> mike-js</a></p>
+      </div>
+     </div>
+
   </aside>
 
 </div>
