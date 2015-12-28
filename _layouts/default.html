@@ -39,7 +39,7 @@
               <p class="info-contact">Contact:</p>
               <div class="aside-text contact-mobile">
                 <p><a href="mailto:hello@mike-studio.com"><span class="fa fa-envelope"></span> hello@mike-studio.com</a></p>
-                <p><a href="https://github.com/mike-js"><span class="fa fa-github"></span> mike-js</a></p>
+                <p><a href="https://github.com/mikestudio"><span class="fa fa-github"></span> /mikestudio</a></p>
                 <hr class="hr-info"/>
               </div>
             </div>
@@ -64,8 +64,9 @@
 
     <script type="text/javascript">
       var mobileToggle = document.querySelector('.mobile-btn');
-      mobileToggle.addEventListener("click", function () {
-        document.querySelector('.mobile-nav').classList.toggle('info-collapsed');
+      mobileToggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector('.mobile-nav').classList.toggle('info-collapse');
       }, false);
     </script>
   

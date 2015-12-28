@@ -112,25 +112,26 @@ a.mobile-btn:hover {
 }
 
 .mobile-info {
+	display: none;
 	width: 70%;
 	margin: 0 auto;
 	padding-top: 35px;
+	
+}
+
+.mobile-nav.info-collapse .open-icon {
 	display: none;
 }
 
-.mobile-nav.info-collapsed .open-icon {
-	display: none;
-}
-
-.mobile-nav.info-collapsed .close-icon {
+.mobile-nav.info-collapse .close-icon {
 	display: inline-block;
 }
 
-.mobile-nav.info-collapsed .mobile-info {
+.mobile-nav.info-collapse .mobile-info {
 	display: block;
 }
 
-.mobile-nav.info-collapsed .info-text {
+.mobile-nav.info-collapse .info-text {
 	color: #c73d02;
 }
 
@@ -195,7 +196,7 @@ div.aside-text.contact-mobile p {
 	display: block;
 	}
 
-	.mobile-nav.info-collapsed .mobile-info {
+	.mobile-nav.info-collapse .mobile-info {
 		display: none;
 	}
 }
