@@ -18,7 +18,7 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-{% highlight ruby %}
+{% highlight html %}
 <html>
   <head>
     <meta charset="utf-8" />
